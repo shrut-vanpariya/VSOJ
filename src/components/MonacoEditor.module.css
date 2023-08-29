@@ -55,7 +55,7 @@
   background-color: black;
   border: 1px solid #ccc;
   width: 450px;
-  height: 180px;
+  height: 180px;  
   padding: 5px;
   resize: none;
   font-family: Arial, sans-serif;
@@ -81,4 +81,24 @@
 
 .runButton:hover, .clearButton:hover {
   background-color: #0056b3;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+
+  .resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .resultTextarea {
+    width: 100%;
+    max-width: 100%;
+  }
 }
