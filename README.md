@@ -1,6 +1,5 @@
 Certainly! Here's a sample `README.md` that you can use as a starting point for your VS Code Editor project:
 
-```markdown
 # VS Code Editor with Monaco Editor
 
 This project is a web-based code editor inspired by Visual Studio Code, built using Next.js and Monaco Editor. It allows you to write, edit, compile, and run code in various programming languages.
