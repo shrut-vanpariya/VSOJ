@@ -1,0 +1,84 @@
+/* MonacoEditor.module.css */
+
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.dropdownContainer {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.select {
+  padding: 5px;
+}
+
+.editor {
+  width: 100%;
+  /* max-width: 800px; */
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.resultField {
+  display: flex;
+  margin: 0 20px 0 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultTextarea {
+  background-color: black;
+  border: 1px solid #ccc;
+  width: 450px;
+  height: 180px;
+  padding: 5px;
+  resize: none;
+  font-family: Arial, sans-serif;
+}
+
+.resultTextarea::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.runButtonContainer {
+  margin-top: 10px;
+}
+
+.runButton, .clearButton {
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.runButton:hover, .clearButton:hover {
+  background-color: #0056b3;
+}
