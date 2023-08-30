@@ -31,9 +31,9 @@
   width: 100%;
   height: 100px;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 0, 0);
   resize: vertical;
-  font-family: Arial, sans-serif;
+  font-family: Consolas, monospace;
 }
 
 .resultContainer {
@@ -52,13 +52,13 @@
 }
 
 .resultTextarea {
-  background-color: black;
-  border: 1px solid #ccc;
+  background-color: white;
+  border: 1px solid black;
   width: 450px;
-  height: 180px;  
+  height: 180px;
   padding: 5px;
   resize: none;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
 }
 
 .resultTextarea::-webkit-scrollbar {
@@ -69,7 +69,8 @@
   margin-top: 10px;
 }
 
-.runButton, .clearButton {
+.runButton,
+.clearButton {
   padding: 5px 10px;
   margin: 2px;
   background-color: #007bff;
@@ -79,15 +80,13 @@
   font-size: 14px;
 }
 
-.runButton:hover, .clearButton:hover {
+.runButton:hover,
+.clearButton:hover {
   background-color: #0056b3;
 }
 
-
-
 /* Media Queries */
 @media screen and (max-width: 1300px) {
-
   .resultContainer {
     display: flex;
     flex-direction: column;
@@ -100,5 +99,16 @@
   .resultTextarea {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .textarea {
+    border: 1px solid #ccc;
+  }
+
+  .resultTextarea {
+    background-color: rgb(45, 44, 44);
+    border: 1px solid #ccc;
   }
 }
