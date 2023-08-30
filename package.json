@@ -4,14 +4,15 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p $PORT",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.5.2",
     "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"
