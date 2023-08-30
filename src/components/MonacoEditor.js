@@ -9,7 +9,7 @@ const MonacoEditor = () => {
   const [input, setInput] = useState(''); // Input for C++ code execution
   const [output, setOutput] = useState(''); // Output of C++ code execution
   const [error, setError] = useState(''); // Error message if C++ code has errors
-  const [editorValue, setEditorValue] = useState(`#include <iostream>
+  const [editorValue, setEditorValue] = useState(`#include <bits/stdc++.h>
 using namespace std;
 
 int main() {

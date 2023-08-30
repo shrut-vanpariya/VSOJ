@@ -9,7 +9,7 @@ module.exports = function runCppCode(code, input) {
 
     // Compile the C++ code using g++
     try {
-        const { stderr } = spawnSync('g++', ['temp.cpp', '-o', 'temp'], { stdio: 'pipe', encoding: 'utf-8' });
+        const { stderr } = spawnSync('g++', ['-std=c++17', 'temp.cpp', '-o', 'temp'], { stdio: 'pipe', encoding: 'utf-8' });
 
         if (stderr) {
             return {
@@ -18,7 +18,7 @@ module.exports = function runCppCode(code, input) {
                 error: false
             }
         }
-        console.log('Compilation successful.');
+        // console.log('Compilation successful.');
     } catch (error) {
         console.error('Compilation failed.');
         process.exit(1);
@@ -51,7 +51,7 @@ module.exports = function runCppCode(code, input) {
     } finally {
         // Delete the compiled executable
         try {
-            fs.unlinkSync('temp.exe');
+            fs.unlinkSync(process.platform === 'win32' ? 'temp.exe' : 'temp');
         } catch (unlinkError) {
             console.error('Error deleting the temporary executable:', unlinkError);
         }
