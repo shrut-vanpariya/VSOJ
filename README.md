@@ -1,4 +1,4 @@
-# VSOJ
+# VSOJ - (Visual Studio code Online Judge)
 
 This project is a web-based code editor inspired by Visual Studio Code, built using Next.js and Monaco Editor. It allows you to write, edit, compile, and run code in various programming languages.
 
@@ -21,7 +21,7 @@ This project is a web-based code editor inspired by Visual Studio Code, built us
 2. Navigate to the project directory:
 
    ```
-   cd vscode-editor
+   cd VSOJ
    ```
 
 3. Install the project dependencies:
