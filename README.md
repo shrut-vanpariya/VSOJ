@@ -1,6 +1,4 @@
-Certainly! Here's a sample `README.md` that you can use as a starting point for your VS Code Editor project:
-
-# VS Code Editor with Monaco Editor
+# VSOJ - (Visual Studio code Online Judge)
 
 This project is a web-based code editor inspired by Visual Studio Code, built using Next.js and Monaco Editor. It allows you to write, edit, compile, and run code in various programming languages.
 
@@ -16,13 +14,14 @@ This project is a web-based code editor inspired by Visual Studio Code, built us
 
 1. Clone the repository to your local machine:
 
-   ```git clone https://github.com/your-username/vscode-editor.git
+   ```
+   git clone https://github.com/shrut-vanpariya/VSOJ.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd vscode-editor
+   cd VSOJ
    ```
 
 3. Install the project dependencies:
